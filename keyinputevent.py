@@ -1,13 +1,12 @@
-#keyinputevent
-
-
-
 from pymitter import EventEmitter
-
 
 #responsible for mapping
 def map(input):
-    return input + "processed"
+    #return input + "processed"
+    if input == "a":
+        return "b"
+    else:
+        return input
 
 #event handling
 ee = EventEmitter()
