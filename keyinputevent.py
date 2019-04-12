@@ -24,6 +24,3 @@ while run:
         run = False
     else: 
         ee.emit("handleInput", keyInput)
-
-
-
