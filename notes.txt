@@ -13,18 +13,30 @@
 
 //-?get a synth going so you can verify midi input?
 
--display which midi in/out ports are available	
+//-display which midi in/out ports are available	
 	/-do
-	-if there's a "friendly" name as well, display that
-
 
 -midi in/out ports set by persistent configuration
+	-how to read config files in python?
+		https://hackernoon.com/4-ways-to-manage-the-configuration-in-python-4623049e841b
+		
+		
+	
+	-put your output ports in there son.
 
+-probably githubize	soon
+
+-try to measure performance.  is realtime realistic?
+	-check out the docs maybe
+	-do I need to install a synth to try this?
+
+-is there a way to make a self-contained executable from my .py script?
 	
 -mapping that's set by config
 	
 -any gui
 -in the gui, display something from the configuration THAT'S READ AFTER THE PROGRAM STARTS
+
 
 -way to choose midi input and output
 -by able to load different profiles, perhaps many at a time (one per midi in/out port pair)
