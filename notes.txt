@@ -12,11 +12,22 @@
 			https://www.tobias-erichsen.de/software/virtualmidi.html
 
 //-?get a synth going so you can verify midi input?
+
+-display which midi in/out ports are available	
+	/-do
+	-if there's a "friendly" name as well, display that
+
+
+-midi in/out ports set by persistent configuration
+
+	
+-mapping that's set by config
+	
 -any gui
 -in the gui, display something from the configuration THAT'S READ AFTER THE PROGRAM STARTS
--persistent configuration
--way to choose midi input and output
 
+-way to choose midi input and output
+-by able to load different profiles, perhaps many at a time (one per midi in/out port pair)
 
 -find a way to simulate midi input?
 -integrate virtual midi driver & make it be added dynamically?

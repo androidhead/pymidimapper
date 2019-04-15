@@ -1,5 +1,17 @@
 import mido
 
+#show which ports are available.
+print("INPUT PORTS:")
+inputs = mido.get_input_names()
+print(mido.get_input_names())
+print("")
+
+print("OUTPUT PORTS:")
+outputs = mido.get_output_names()
+print(mido.get_output_names())
+print("")
+
+
 #you can add to these in the console with something like:
 # noteMap.update({62:61})
 noteMap = {
