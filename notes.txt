@@ -11,9 +11,15 @@
 			https://nerds.de/en/loopbe1.html
 			https://www.tobias-erichsen.de/software/virtualmidi.html
 
--?get a synth going so you can verify midi input?
--find a way to simulate midi input?
+//-?get a synth going so you can verify midi input?
+-any gui
+-in the gui, display something from the configuration THAT'S READ AFTER THE PROGRAM STARTS
+-persistent configuration
+-way to choose midi input and output
 
+
+-find a way to simulate midi input?
+-integrate virtual midi driver & make it be added dynamically?
 
 
 REFERENCES
