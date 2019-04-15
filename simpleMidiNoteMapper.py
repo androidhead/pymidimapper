@@ -26,7 +26,8 @@ noteMap = {
 }
 
 def transform(midiMessage):
-    midiMessage.note = noteMap.get(midiMessage.note, midiMessage.note) #map to note in noteMap.  If not found, simply pass-thru.    
+    if hasattr(midiMessage, 'note'):
+        midiMessage.note = noteMap.get(midiMessage.note, midiMessage.note) #map to note in noteMap.  If not found, simply pass-thru.        
     return midiMessage
 
 outport = mido.open_output(outportName)

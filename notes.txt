@@ -16,19 +16,15 @@
 //-display which midi in/out ports are available	
 	/-do
 
--midi in/out ports set by persistent configuration
-	-how to read config files in python?
-		https://hackernoon.com/4-ways-to-manage-the-configuration-in-python-4623049e841b
-		
-		
+//-midi in/out ports set by persistent configuration
+//-probably githubize	soon
+
+//-try to measure performance.  is realtime realistic?
+	-get a synth
+	-test realtime performance (by feel)
+	-doesn't apear to have performance issues.
 	
-	-put your output ports in there son.
-
--probably githubize	soon
-
--try to measure performance.  is realtime realistic?
-	-check out the docs maybe
-	-do I need to install a synth to try this?
+-fix issue where non-note messages break the whole thing
 
 -is there a way to make a self-contained executable from my .py script?
 	
@@ -44,6 +40,9 @@
 -find a way to simulate midi input?
 -integrate virtual midi driver & make it be added dynamically?
 
+LIBRARIES THAT NEEDED INSTALLING
+	mido
+	(MAYBE needed the C++ something something from MS for mido to work)
 
 REFERENCES
 https://wiki.python.org/moin/PythonInMusic	
