@@ -19,16 +19,13 @@
 //-midi in/out ports set by persistent configuration
 //-probably githubize	soon
 
-//-try to measure performance.  is realtime realistic?
-	-get a synth
-	-test realtime performance (by feel)
-	-doesn't apear to have performance issues.
-	
--fix issue where non-note messages break the whole thing
+//-try to measure performance.  is realtime realistic?	
+
+-mapping that's set by config
 
 -is there a way to make a self-contained executable from my .py script?
 	
--mapping that's set by config
+-now you're ready to try v0.1 on your music laptop!
 	
 -any gui
 -in the gui, display something from the configuration THAT'S READ AFTER THE PROGRAM STARTS

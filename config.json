@@ -1,4 +1,8 @@
 {
     "INPUT_PORT" : "Babyface Midi Port 1 0",
-    "OUTPUT_PORT" : "Springbeats vMIDI1 2"
+    "OUTPUT_PORT" : "Springbeats vMIDI1 2",
+    "NOTE_MAP": {
+        "62":63,
+        "63":64
+    }    
 }
