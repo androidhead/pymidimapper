@@ -12,18 +12,19 @@
 			https://www.tobias-erichsen.de/software/virtualmidi.html
 
 //-?get a synth going so you can verify midi input?
-
 //-display which midi in/out ports are available	
-	/-do
-
 //-midi in/out ports set by persistent configuration
 //-probably githubize	soon
-
 //-try to measure performance.  is realtime realistic?	
-
--mapping that's set by config
+//-mapping that's set by config
 
 -is there a way to make a self-contained executable from my .py script?
+	-ideally, it shows console for now (since that shows the midi inputs / outputs)
+	https://packaging.python.org/overview/
+		"...Bringing your own Python executable"
+			py2exe looks promising
+	
+	
 	
 -now you're ready to try v0.1 on your music laptop!
 	
