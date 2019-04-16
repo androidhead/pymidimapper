@@ -32,11 +32,9 @@ def transform(midiMessage):
 outport = mido.open_output(outportName)
 with mido.open_input(inportName) as inport:
     for msg in inport:
-        print('before transform:')
-        print(msg)
+        print('before transform:', msg)
         msg = transform(msg)  #transform message
-        print('after transform:')
-        print(msg)
+        print('after transform:', msg)        
         outport.send(msg)  #just send the message right through
 
  
