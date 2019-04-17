@@ -36,5 +36,3 @@ with mido.open_input(inportName) as inport:
         msg = transform(msg)  #transform message
         print('after transform:', msg)        
         outport.send(msg)  #just send the message right through
-
- 

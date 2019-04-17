@@ -2,15 +2,10 @@
 //-set up a midi controller and basic monitoring (aka Midi-OX)	 
 //-get program from work laptop and working as-is
 //-get some midi libarary(s) for python and start working with them
-
-
 //-get midi output working - into MIDI-OX
 	-iff necessary probably a midi loop back driver of some sort to get midi input into something useful
 		try these:
 			** 
-			https://nerds.de/en/loopbe1.html
-			https://www.tobias-erichsen.de/software/virtualmidi.html
-
 //-?get a synth going so you can verify midi input?
 //-display which midi in/out ports are available	
 //-midi in/out ports set by persistent configuration
@@ -23,8 +18,19 @@
 	https://packaging.python.org/overview/
 		"...Bringing your own Python executable"
 			py2exe looks promising
-	
-	
+
+			**https://pypi.org/project/auto-py-to-exe/
+				just run 
+					>> auto-py-to-exe
+				seems to run: pyinstaller -y "C:/Users/Andrew/source/repos/pymidimapper/simpleMidiNoteMapper.py"
+				-working, but with following caveats:
+					-Barfs when midi ins/outs specified are not available
+					-I think data from .json file gets embedded into .exe rather than being read every time executable runs.  not sure, but I think so.
+
+
+
+
+
 	
 -now you're ready to try v0.1 on your music laptop!
 	
@@ -46,7 +52,11 @@ REFERENCES
 https://wiki.python.org/moin/PythonInMusic	
 https://springbeats.com/2016/12/10/springbeats-free-virtual-midi-cable/
 https://github.com/mido/mido
-
+https://pypi.org/project/auto-py-to-exe/ (for building self-contained executable)
+MIDI LOOPBACK DRIVER
+	https://nerds.de/en/loopbe1.html
+	https://www.tobias-erichsen.de/software/virtualmidi.html
+	*ended up going with SBVIMIDI - Virtual MIDI Driver x64.  It may or may not be one of the above.
 
 SOME OTHER HELPFUL CODE THAT GOT ME THERE
 #   print(mido.get_input_names())
