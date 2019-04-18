@@ -3,9 +3,6 @@
 //-get program from work laptop and working as-is
 //-get some midi libarary(s) for python and start working with them
 //-get midi output working - into MIDI-OX
-	-iff necessary probably a midi loop back driver of some sort to get midi input into something useful
-		try these:
-			** 
 //-?get a synth going so you can verify midi input?
 //-display which midi in/out ports are available	
 //-midi in/out ports set by persistent configuration
@@ -22,6 +19,8 @@
 			**https://pypi.org/project/auto-py-to-exe/
 				-DO A GITIGNORE TO NOT git-ize output folder!				
 				
+
+
 				just run 
 					>> auto-py-to-exe
 				seems to run: pyinstaller -y "C:/Users/Andrew/source/repos/pymidimapper/simpleMidiNoteMapper.py"
@@ -51,6 +50,8 @@
 
 -find a way to simulate midi input?
 -integrate virtual midi driver & make it be added dynamically?
+
+
 
 LIBRARIES THAT NEEDED INSTALLING
 	mido
