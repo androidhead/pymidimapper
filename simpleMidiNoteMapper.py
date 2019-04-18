@@ -29,10 +29,17 @@ def transform(midiMessage):
         midiMessage.note = noteMap.get(midiMessage.note, midiMessage.note) #map to note in noteMap.  If not found, simply pass-thru.        
     return midiMessage
 
-outport = mido.open_output(outportName)
-with mido.open_input(inportName) as inport:
-    for msg in inport:
-        print('before transform:', msg)
-        msg = transform(msg)  #transform message
-        print('after transform:', msg)        
-        outport.send(msg)  #just send the message right through
+try:
+    outport = mido.open_output(outportName)
+    with mido.open_input(inportName) as inport:
+        for msg in inport:
+            print('before transform:', msg)
+            msg = transform(msg)  #transform message
+            print('after transform:', msg)        
+            outport.send(msg)  #just send the message right through                
+except:
+    print('something broke.  It is likely that the specified midi in port or midi out port does not exist.')
+    input("Press Enter to terminate.")
+
+
+#todo: make sure midi devices are closed?
