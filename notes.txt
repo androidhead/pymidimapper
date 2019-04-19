@@ -15,32 +15,40 @@
 	https://packaging.python.org/overview/
 		"...Bringing your own Python executable"
 			py2exe looks promising
-
 			**https://pypi.org/project/auto-py-to-exe/
 				-DO A GITIGNORE TO NOT git-ize output folder!				
-				
-
-
 				just run 
 					>> auto-py-to-exe
 				seems to run: pyinstaller -y "C:/Users/Andrew/source/repos/pymidimapper/simpleMidiNoteMapper.py"
 				-working, but with following caveats:
+					-simpleMidiNoteMapper barfs on first line where it says
+						//get it not barfing initiallly
+							no module named 'mido.bakends.rtmidi'
+								https://github.com/mido/mido/issues/17
+								No module named 'mido.backends.rtmidi'
+								try 
+								
+								
+						
+					
 					-Barfs when midi ins/outs specified are not available
-						-or MAYBE it's cuz config.json aint there son
+						/-or MAYBE it's cuz config.json aint there son
 
 						-anyhow, try to get it correcting for both of these cases
 							(or at least reporting back to the console what the issue is)
 
+				
 
 					-make sure it's reading from the config file
 
-
+		-try to get it going using PyInstaller directly
 
 
 
 	
 -now you're ready to try v0.1 on your music laptop!
 	
+-do some branching	
 -any gui
 -in the gui, display something from the configuration THAT'S READ AFTER THE PROGRAM STARTS
 
