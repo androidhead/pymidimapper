@@ -23,18 +23,8 @@
 				-working, but with following caveats:
 					-simpleMidiNoteMapper barfs on first line where it says
 						//get it not barfing initiallly
-							no module named 'mido.bakends.rtmidi'
-								https://github.com/mido/mido/issues/17
-								No module named 'mido.backends.rtmidi'
-								try 
-						-get it back to a working state and commit
-							-can't get the output port to load.  not sure why
-							
-							-maybe need to try old script?
-							-maybe need to try old setup (with the babyface, etc)
+						//-get it back to a working state and commit
 								
-								
-						
 						
 						-branch						
 							-get the whole thing not barfing as exe						
@@ -54,7 +44,7 @@
 
 	
 -now you're ready to try v0.1 on your music laptop!
-	
+-!!NEED TO HAVE BABYFACE PLUGGED IN FOR THINGS TO WORK SOMEHOW.  OTHERWISE OTHER MIDI PORTS WON'T OPEN
 -do some branching	
 -any gui
 -in the gui, display something from the configuration THAT'S READ AFTER THE PROGRAM STARTS
