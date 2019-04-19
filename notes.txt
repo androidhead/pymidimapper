@@ -27,21 +27,28 @@
 								https://github.com/mido/mido/issues/17
 								No module named 'mido.backends.rtmidi'
 								try 
+						-get it back to a working state and commit
+							-can't get the output port to load.  not sure why
+							
+							-maybe need to try old script?
+							-maybe need to try old setup (with the babyface, etc)
 								
 								
 						
+						
+						-branch						
+							-get the whole thing not barfing as exe						
+							-try to get it going using PyInstaller directly						
+							-make sure it's reading from the config file as exe
+							-get it not barfing on a different machine
+									
+						
 					
-					-Barfs when midi ins/outs specified are not available
-						/-or MAYBE it's cuz config.json aint there son
-
-						-anyhow, try to get it correcting for both of these cases
-							(or at least reporting back to the console what the issue is)
-
 				
 
-					-make sure it's reading from the config file
+					
 
-		-try to get it going using PyInstaller directly
+		
 
 
 
@@ -74,6 +81,7 @@ MIDI LOOPBACK DRIVER
 	https://nerds.de/en/loopbe1.html
 	https://www.tobias-erichsen.de/software/virtualmidi.html
 	*ended up going with SBVIMIDI - Virtual MIDI Driver x64.  It may or may not be one of the above.
+https://github.com/mido/
 
 SOME OTHER HELPFUL CODE THAT GOT ME THERE
 #   print(mido.get_input_names())
