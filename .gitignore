@@ -3,3 +3,4 @@
 /__pycache__
 /building-dist
 *.spec
+__pycache__/simpleMidiNoteMapper.cpython-37.pyc
