@@ -1,3 +1,5 @@
 #artifacts from building exe
 /output
 /__pycache__
+/building-dist
+*.spec

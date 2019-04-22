@@ -10,51 +10,33 @@
 //-try to measure performance.  is realtime realistic?	
 //-mapping that's set by config
 
--is there a way to make a self-contained executable from my .py script?
-	-ideally, it shows console for now (since that shows the midi inputs / outputs)
-	https://packaging.python.org/overview/
-		"...Bringing your own Python executable"
-			py2exe looks promising
-			**https://pypi.org/project/auto-py-to-exe/
-				-DO A GITIGNORE TO NOT git-ize output folder!				
-				just run 
-					>> auto-py-to-exe
-				seems to run: pyinstaller -y "C:/Users/Andrew/source/repos/pymidimapper/simpleMidiNoteMapper.py"
-				-working, but with following caveats:
-					-simpleMidiNoteMapper barfs on first line where it says
-						//get it not barfing initiallly
-						//-get it back to a working state and commit
-								
-						
-						-branch						
-							-get the whole thing not barfing as exe						
-							-try to get it going using PyInstaller directly						
-							-make sure it's reading from the config file as exe
-							-get it not barfing on a different machine
-									
-						
-					
-				
 
-					
-
-		
-
-
-
+//-auto-py-to-exe DEPLOYMENT	
 	
--now you're ready to try v0.1 on your music laptop!
+-now you're ready to try v0.1 somewhere besides dev pc!
+	//-dell laptop	
+	-music pc!
+
+-probably cleanup/archive the unused scripts
+
 -!!NEED TO HAVE BABYFACE PLUGGED IN FOR THINGS TO WORK SOMEHOW.  OTHERWISE OTHER MIDI PORTS WON'T OPEN
+	-address this as possible
 -do some branching	
+
+
+-think about librarizing some of the components so not everything is in one file
 -any gui
 -in the gui, display something from the configuration THAT'S READ AFTER THE PROGRAM STARTS
-
-
 -way to choose midi input and output
+-streamline deployment
+	-auto-py-to-exe "one file" deployment works to deploy a single exe with the caveat that you must manually copy in the config.json file
+	-try to get it going using PyInstaller directly	
+		-if so, put deployment commands in git'd code or git'd notes		
 -by able to load different profiles, perhaps many at a time (one per midi in/out port pair)
-
 -find a way to simulate midi input?
 -integrate virtual midi driver & make it be added dynamically?
+
+
 
 
 

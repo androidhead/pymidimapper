@@ -41,7 +41,7 @@ try:
             #outport.send(msg)  #just send the message right through                
 
 except Exception as e:
-     print('Error::')
-     print(e)
+    print('Error::')
+    print(e)
 
 input('Press Enter to terminate.')
