@@ -16,13 +16,14 @@
 -now you're ready to try v0.1 somewhere besides dev pc!
 	//-dell laptop	
 	-music pc!
+	
+	
 
 -probably cleanup/archive the unused scripts
-
 -!!NEED TO HAVE BABYFACE PLUGGED IN FOR THINGS TO WORK SOMEHOW.  OTHERWISE OTHER MIDI PORTS WON'T OPEN
 	-address this as possible
 -do some branching	
-
+-clean up .gitignore
 
 -think about librarizing some of the components so not everything is in one file
 -any gui
