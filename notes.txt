@@ -1,20 +1,13 @@
 //-get basic midi i/o working to drive synth
 
 
+//-understand i/o routing a little better
 
--get instance of this working through mapper
-
-
-
--understand i/o routing a little better
-
--fix issues from trying 0.1 release on hp pc
-	-printing too many from console
-		-logging random midi events?
-			-try to reproduce this
-			-if that is the problem, then only log note events
-	-midi i/o from mapper not making it to synth
-	
+//-fix issues from trying 0.1 release on hp pc
+	//-printing too many from console
+	//-midi i/o from mapper not making it to synth
+	//-merge branch
+		
 
 
 	
