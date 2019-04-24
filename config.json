@@ -1,6 +1,6 @@
 {
     "INPUT_PORT" : "Babyface Midi Port 1 0",
-    "OUTPUT_PORT" : "loopMIDI Port 10",
+    "OUTPUT_PORT" : "loopMIDI Port 2",
     "NOTE_MAP": {
         "62":63,
         "63":64
