@@ -35,10 +35,12 @@ try:
     outport = mido.open_output(outportName)
     with mido.open_input(inportName) as inport:
         for msg in inport:
-            print('before transform:', msg)
-            msg = transform(msg)  #transform message
-            print('after transform:', msg)        
-            #outport.send(msg)  #just send the message right through                
+            #for now, only log note messages to avoid over-logging
+            if (msg.type == 'note_on'):
+                print('before transform:', msg)
+                msg = transform(msg)  #transform message
+                print('after transform:', msg)        
+            outport.send(msg)
 
 except Exception as e:
     print('Error::')

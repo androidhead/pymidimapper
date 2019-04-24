@@ -1,6 +1,8 @@
 #artifacts from building exe
 /output
 /__pycache__
-/building-dist
+/build
+/dist
+/.vscode
 *.spec
 __pycache__/simpleMidiNoteMapper.cpython-37.pyc

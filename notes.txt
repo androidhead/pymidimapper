@@ -1,22 +1,22 @@
-//-set up notepad++
-//-set up a midi controller and basic monitoring (aka Midi-OX)	 
-//-get program from work laptop and working as-is
-//-get some midi libarary(s) for python and start working with them
-//-get midi output working - into MIDI-OX
-//-?get a synth going so you can verify midi input?
-//-display which midi in/out ports are available	
-//-midi in/out ports set by persistent configuration
-//-probably githubize	soon
-//-try to measure performance.  is realtime realistic?	
-//-mapping that's set by config
+//-get basic midi i/o working to drive synth
 
 
-//-auto-py-to-exe DEPLOYMENT	
+
+-get instance of this working through mapper
+
+
+
+-understand i/o routing a little better
+
+-fix issues from trying 0.1 release on hp pc
+	-printing too many from console
+		-logging random midi events?
+			-try to reproduce this
+			-if that is the problem, then only log note events
+	-midi i/o from mapper not making it to synth
 	
--now you're ready to try v0.1 somewhere besides dev pc!
-	//-dell laptop	
-	-music pc!
-	
+
+
 	
 
 -probably cleanup/archive the unused scripts
@@ -36,7 +36,7 @@
 -by able to load different profiles, perhaps many at a time (one per midi in/out port pair)
 -find a way to simulate midi input?
 -integrate virtual midi driver & make it be added dynamically?
-
+	http://www.tobias-erichsen.de/software/virtualmidi.html (which is the same guy who makes loopMidi)
 
 
 
@@ -53,7 +53,7 @@ https://pypi.org/project/auto-py-to-exe/ (for building self-contained executable
 MIDI LOOPBACK DRIVER
 	https://nerds.de/en/loopbe1.html
 	https://www.tobias-erichsen.de/software/virtualmidi.html
-	*ended up going with SBVIMIDI - Virtual MIDI Driver x64.  It may or may not be one of the above.
+	*ended up going with SBVIMIDI - Virtual MIDI Driver x64.  It may or may not be one of the above.	
 https://github.com/mido/
 
 SOME OTHER HELPFUL CODE THAT GOT ME THERE
